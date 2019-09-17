@@ -1,4 +1,4 @@
-package com.startzyp.chuangweiwash.chuangweiwash.controller.usercontrooler;
+package com.startzyp.chuangweiwash.chuangweiwash.controller.usercontroller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

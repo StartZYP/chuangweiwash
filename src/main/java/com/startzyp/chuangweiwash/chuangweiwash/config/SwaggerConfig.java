@@ -1,6 +1,5 @@
 package com.startzyp.chuangweiwash.chuangweiwash.config;
 
-import com.startzyp.chuangweiwash.chuangweiwash.controller.userlogin;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,7 +27,7 @@ public class SwaggerConfig {
                 .groupName("游客登录")
                 .select()
                 // 自行修改为自己的包路径
-                .apis(RequestHandlerSelectors.basePackage("com.startzyp.chuangweiwash.chuangweiwash.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.startzyp.chuangweiwash.chuangweiwash.controller.logincontroller"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -42,7 +41,7 @@ public class SwaggerConfig {
                 .groupName("用户组")
                 .select()
                 // 自行修改为自己的包路径
-                .apis(RequestHandlerSelectors.basePackage("com.github.startzyp.swagger2.swagger2.controller.user"))
+                .apis(RequestHandlerSelectors.basePackage("com.startzyp.chuangweiwash.chuangweiwash.controller.usercontroller"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -55,7 +54,7 @@ public class SwaggerConfig {
                 .groupName("管理组")
                 .select()
                 // 自行修改为自己的包路径
-                .apis(RequestHandlerSelectors.basePackage("com.github.startzyp.swagger2.swagger2.controller.admin"))
+                .apis(RequestHandlerSelectors.basePackage("com.startzyp.chuangweiwash.chuangweiwash.controller.admincontroller"))
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -9,7 +9,9 @@ package com.startzyp.chuangweiwash.chuangweiwash.entity.system;
  */
 public final class ErrorMessage {
     public static final String SYSTEM_EXCEPTION = "系统繁忙，请稍后再试";
-    public static final String NOT_LOGIN = "01001_您还未登陆或者登陆已超时，请重新登陆";
-    public static final String MOBILE_ALREADY_REGISTER = "01002_该手机号已经被注册了";
+    public static final String NOT_USERNAME = "01001_用户名不存在";
+    public static final String NOT_PASSWORD = "01002_密码错误";
+    public static final String NOT_LOGIN = "01003_您还未登陆或者登陆已超时，请重新登陆";
+    public static final String NOT_FIELDINPUT = "01004_您有未填写的字段,表单提交失败";
     public static final String LOGIC_EXCEPTION = "01003_对不起，你是真的没有我帅";
 }

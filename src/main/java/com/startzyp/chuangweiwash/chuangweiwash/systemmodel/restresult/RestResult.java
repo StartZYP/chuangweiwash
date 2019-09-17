@@ -28,7 +28,7 @@ public class RestResult {
     /**
      * 服务器当前时间（添加该字段的原因是便于查找定位请求时间，因为实际开发过程中服务器时间可能跟本地时间不一致，加上这个时间戳便于日后定位）
      */
-    private Timestamp currentTime;
+    private Date currentTime;
 
     public RestResult() {
     }
@@ -49,7 +49,7 @@ public class RestResult {
         this.code = code;
         this.data = data;
         this.errorMessage = errorMessage;
-        this.currentTime = new Timestamp(new Date().getTime());
+        this.currentTime = new Date();
     }
 
     public boolean isSuccess() {
@@ -84,8 +84,8 @@ public class RestResult {
         this.errorMessage = errorMessage;
     }
 
-    public Timestamp getCurrentTime() {
-        return currentTime;
+    public String getCurrentTime() {
+        return String.valueOf(currentTime.getTime());
     }
 
     public void setCurrentTime(Timestamp currentTime) {
